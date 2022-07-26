@@ -18,6 +18,55 @@ a {
 }
 
 /*NAVBAR*/
+.navbar{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.navbar-tabs{
+    display: flex;
+}
+
+.tab-button{
+    background-color:#f2f4fc;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #3e466c;
+    padding: 0 20px;
+}
+
+.tab-button:hover{
+    color: blue;
+}
+
+.tab-button:nth-child(1){
+    color: rgb(0, 136, 255);
+}
+
+.tab-button:nth-child(1):hover{
+    color: blue;
+}
+
+.contact-button{
+    background-color: blue;
+    color: #f2f4fc;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+
+.contact-button:hover{
+    background-color: #3e466c;
+}
 
 /*HOME*/
 .home{
@@ -37,7 +86,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 450px;
+    width: 500px;
 }
 
 .home-content>h1{
@@ -63,30 +112,37 @@ a {
     background-color: rgb(16, 16, 187);
     border: none;
     color: #f2f4fc;
+    cursor: pointer;
     font-size: 1.1em;
     height: 50px;
     width: 150px;
 }
 
+.home-btn:hover{
+    background-color: #3e466c;
+}
+
 .home-images{
+    display: flex;
+    justify-content: flex-end;
     position: relative;
     width: 60%;
     margin-bottom: 5em;
 }
 
 .img-hero{
-    width: 100%;
+    width: 95%;
 }
 
 .img-hero-card1{
-    left: -15%;
+    left: -12%;
     position: absolute;
     width: 300px;
 }
 
 .img-hero-card2{
     right: -17%;
-    bottom: -19%;
+    bottom: -23%;
     position: absolute;
     width: 300px;
 }
@@ -350,8 +406,13 @@ a {
     background-color: rgb(0, 0, 255);
     border: none;
     color: rgb(255, 255, 255);
+    cursor: pointer;
     height: 90px;
     width: 180px;
+}
+
+.button-email:hover{
+    background-color: #3e466c;
 }
 
 /*FOOTER*/
@@ -373,13 +434,13 @@ a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content:space-evenly;
+    justify-content:space-around;
     height: 110px;
     width: 260px;
 }
 
 .img-footer{
-    height: 20px;
+    height: 30px;
 }
 
 .grid-footer{
@@ -389,4 +450,8 @@ a {
     grid-template-columns: 1fr 1fr 1fr;
     height: 110px;
     width: 350px;
+}
+.link-footer{
+    color: blue;
+    font-size: 1.1em;
 }
