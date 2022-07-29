@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../cssFiles/style.css" />
+    <link rel="stylesheet" href="../cssFiles/form.css" />
+    <script src="../javaScriptFiles/contact.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav id="navbar1" class="navbar">
+        <div class="navbar-container">
+          <img src="../images/logos/circle.svg" alt="">
+          <nav class="navbar-burguer">
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects1">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services1">Services</a>
+              </li>
+            </ul>
+            <div class="hamburguer">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </nav>
+          <a class="contact-button">Contact Us</a>
+        </div>
+    </nav>
+    <!--FORM-->
+    <form id="form-project" class="form" name="myForm">
+        <div class="container">
+            <div class="row">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="row">
+                <div class="styled-input wide">
+                    <input type="text" name="name" required />
+                    <label>Full Name*</label>
+                    <span class="error" id="errorname"></span>
+            <div class="row">
+                <div class="styled-input margin-rigth">
+                    <input type="email" name="email" required />
+                    <label>Email</label> 
+                    <span class="error" id="erroremail"></span>
+                </div>
+                <div class="styled-input" >
+                    <input type="number" required />
+                    <label>Phone Number</label>
+                </div>
+            </div>
+                <div class="styled-input wide">
+                    <textarea name="message" required></textarea>
+                    <label>Message*</label>
+                    <span class="error" id="errormsg"></span>
+                </div>
+                <input type="submit" value="Submit" class="submit-btn"> 
+            </div>
+        </div>
+    </form>
+    <!--FOOTER-->
+    <section id="footer1" class="footer">
+        <div class="content-footer">
+          <div class="left-footer">
+            <img class="img-footer" src="../images/logos/circle.svg" alt="">
+            <div class="address-footer">2972 Westheimer Rd. Santa Ana, Illinois 85486</div>
+          </div>
+          <div class="grid-footer">
+            <a class="link-footer" href="#">Team</a>
+            <a class="link-footer" href="#">Services</a>
+            <a class="link-footer" href="#">About Us</a>
+            <a class="link-footer" href="#">Press</a>
+            <a class="link-footer" href="#">Projects</a>
+            <a class="link-footer" href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </section>
+</body>
+</html>

@@ -1,0 +1,166 @@
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    max-width: 900px;
+    width: 80%;
+}
+.row{
+    display: flex;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif, 'arial';
+    font-weight: 600;
+    font-size: 72px;
+    color:#2d2d2d;
+    text-align: left;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif, 'arial';
+    font-weight: 400;
+    font-size: 20px;
+    color: #9b9b9b;
+    line-height: 1.5;
+}
+
+
+
+/* ///// inputs /////*/
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+    font-size: 0.75em;
+    color: #999;
+    top: -5px;
+    -webkit-transition: all 0.225s ease;
+    transition: all 0.225s ease;
+}
+
+.styled-input {
+    width: 45%;
+    margin: 1rem 0;
+    position: relative;
+    border-radius: 4px;
+}
+
+.margin-rigth{
+    margin-right: 6.4%;
+}
+
+@media only screen and (max-width: 768px){
+    
+    .container{
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .styled-input {
+        width:100%;
+    }
+
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .margin-rigth{
+        margin-right: 0;
+    }
+}
+
+.styled-input label {
+    color: #999;
+    padding: 1.3rem 30px 1rem 30px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+}
+
+.styled-input.wide {
+    width: 100%;
+}
+
+input,
+textarea {
+    padding: 30px;
+    border: 0;
+    width: 93%;
+    font-size: 1rem;
+    background-color: rgba(107, 112, 141, 0.1);
+    color: black;
+    border-radius: 4px;
+}
+
+input:focus,
+textarea:focus { outline: 0; }
+
+input:focus ~ span,
+textarea:focus ~ span {
+    width: 93%;
+    -webkit-transition: all 0.075s ease;
+    transition: all 0.075s ease;
+}
+
+textarea {
+    width: 93%;
+    min-height: 15em;
+}
+
+.input-container {
+    width: 650px;
+    max-width: 100%;
+    margin: 20px auto 25px auto;
+}
+
+.submit-btn {
+    width:100%;
+    text-align:center;
+    background-color: blue;
+    color: #f2f4fc;
+    cursor: pointer;
+    padding: 30px 30px;
+}
+
+.submit-btn:hover {
+    background-color: #3e466c;
+}
+
+
+@media (max-width: 768px) {
+    .submit-btn {
+        width:100%;
+        float: none;
+        text-align:center;
+    }
+}
+
+input[type=checkbox] + label {
+  color: #ccc;
+  font-style: italic;
+} 
+
+input[type=checkbox]:checked + label {
+  color: #f00;
+  font-style: normal;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
+
+.error{
+    color: #D8000C;
+    background-color: #FFBABA;
+  }
